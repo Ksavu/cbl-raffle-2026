@@ -184,27 +184,27 @@ export default function CBLRaffleDApp() {
 
   const getTokenColor = (token) => {
     const colors = {
-      CBL: 'text-amber-400',
-      SOL: 'text-purple-400',
-      USDC: 'text-blue-400'
+      CBL: 'text-brand.blue',
+      SOL: 'text-brand.purple',
+      USDC: 'text-brand.white'
     };
-    return colors[token] || 'text-yellow-400';
+    return colors[token] || 'text-brand.white';
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-amber-900 to-slate-900 text-white p-6">
+    <div className="min-h-screen bg-brand.dark text-brand.white p-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex justify-between items-center mb-8 flex-wrap gap-4">
           <div className="flex items-center gap-3">
-            <div className="bg-gradient-to-br from-amber-500 to-yellow-600 p-3 rounded-xl shadow-lg">
-              <Sparkles className="w-8 h-8" />
+            <div className="bg-brand.surface p-3 rounded-xl shadow-glow">
+              <Sparkles className="w-8 h-8 text-brand.blue" />
             </div>
             <div>
-              <h1 className="text-3xl font-bold bg-gradient-to-r from-amber-400 to-yellow-300 bg-clip-text text-transparent">
+              <h1 className="text-3xl font-bold bg-gradient-to-r from-brand.blue to-brand.purple bg-clip-text text-transparent">
                 CBL Raffle 2026
               </h1>
-              <p className="text-amber-300 text-sm font-semibold">Crypto Bar Lounge · Powered by Solana</p>
+              <p className="text-brand.blue text-sm font-semibold">Crypto Bar Lounge · Powered by Solana</p>
             </div>
           </div>
           
@@ -213,14 +213,14 @@ export default function CBLRaffleDApp() {
               <>
                 <button
                   onClick={() => setShowTokenModal(true)}
-                  className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-semibold transition shadow-lg"
+                  className="flex items-center gap-2 bg-brand.purple hover:bg-opacity-80 px-4 py-2 rounded-lg font-semibold transition shadow-purpleGlow"
                 >
                   <Coins className="w-5 h-5" />
                   Add Token
                 </button>
                 <button
                   onClick={() => setShowCreateModal(true)}
-                  className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg font-semibold transition shadow-lg"
+                  className="flex items-center gap-2 bg-brand.blue hover:bg-opacity-80 px-4 py-2 rounded-lg font-semibold transition shadow-glow"
                 >
                   <Plus className="w-5 h-5" />
                   Create Raffle
