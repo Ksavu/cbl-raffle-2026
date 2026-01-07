@@ -9,7 +9,7 @@ import {
   Coins
 } from 'lucide-react';
 
-import Logo from './assets/cbl-logo.png';
+import Logo from './assets/cbl-logo.jpg';
 
 export default function CBLRaffleDApp() {
   const [connected, setConnected] = useState(false);
